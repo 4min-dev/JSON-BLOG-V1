@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+::-webkit-scrollbar {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #E7CD9C;
+    border-radius: 50px;
+}
+* {
+    padding:0;
+    margin:0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 400; 
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+hr {
+    border: 1px solid black;
+}
+ul {
+    list-style: none;
+}
+label {
+    cursor: pointer;
+}
+body {
+    background:#FFEFD0;
+}
+input::placeholder,textarea::placeholder {
+    color:#3e3e3e
+}
+input,textarea {
+    color:#3e3e3e
+}
+header {
+    position: relative;
+    display: flex;
+    margin:0px 70px 0px 70px;
+    padding:10px 0px 10px 0px;
+    align-items: end;
+    height: 100px;
+    border-bottom: 2px solid black;
+    z-index: 2;
+}
+textarea {
+    border:none;
+    outline: none;
+    background:#E7CD9C;
+    padding:13px 26px 13px 26px;
+}
+.containerLogoHeader {
+    position: absolute;
+    left:0;
+}
+.contentLogoHeader {
+    position: relative;
+    text-align: center;
+    width: 111px;
+}
+header>ul {
+    position: absolute;
+    left:300px;
+    display: flex;
+}
+header>ul>li {
+    margin:0px 72px 0px 0px;
+}
+header>ul>li>a>h2 {
+    transition: all,0.3s;
+}
+header>ul>li>a>h2:hover {
+    color:#E7CD9C;
+    transform: translateY(-5px);
+}
+.containerProfileHeader {
+    position: absolute;
+    right:0;
+}
+.contentProfileHeader {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.contentProfileHeader>ul {
+    border-left:2px solid black;
+    padding:0px 0px 0px 15px;
+}
+.contentProfileHeader>ul>button {
+    border:none;
+    outline: none;
+    background:none;
+}
+.containerProfileHeader {
+    display: flex;
+    align-items: flex-end;
+}
+
+.containerAssignHeaderProfile {
+    display: flex;
+    align-items: end;
+}
+.containerAssignHeaderProfile>h4 {
+    margin:0px 15px 0px 0px;
+}
+aside {
+    position: relative;
+    border-right:2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0px 0px 0px 70px;
+    width: 210px;
+    height: 100vh;
+    z-index: 1;
+}
+.containerUiLoginPage {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.contentUiLoginPage>form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.contentUiLoginPage>form>button {
+    width: 100%;
+}
+#app > div > div > div > div.containerUiAvatarLoginPage > div > div {
+    height: 300px;
+    width: 300px;
+    margin:0px 100px 0px 0px;
+}
+#app > div > div > div > div.containerUiAvatarLoginPage > div > div > label > img {
+    width: 100px;
+    height: 100px;
+}
+.customInput {
+    border:none;
+    background:#E7CD9C;
+    padding:13px 26px 13px 26px;
+    border:none;
+    outline: none;
+    transition: all,0.3s;
+}
+.loginPageInput {
+    width: 500px;
+    font-size: 40px;
+    margin:0px 0px 32px 0px;
+}
+.loginPageInput:focus {
+    transform: scaleX(1.05)
+}
+#loginPageSendButton {
+    padding:13px 0px 13px 0px;
+    font-size: 40px;
+}
+#loginPageSendButton:hover {
+    transform: scale(1.1);
+}
+.contentUiLoginPage>form>ul {
+    margin:25px 0px 0px 0px;
+}
+.contentCustomFileUpload {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border:3px solid #E7CD9C;
+    border-radius: 15px;
+    margin:0px 0px 0px 0px;
+}
+.contentCustomFileUpload>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    z-index: 1;
+}
+.contentCustomFileUpload>label>img {
+    position: relative;
+    z-index: 2;
+}
+.contentCustomFileUpload>h1 {
+    z-index: 3;
+}
+.customFileUpload::-webkit-file-upload-button {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background:none;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+.customFileUpload {
+    position: relative;
+    cursor: pointer;
+    left:30%;
+}
+.avatarError {
+    color:red;
+}
+.isntValidUserInfo {
+    color:red;
+}
+.validUserInfo {
+    color:green;
+}
+.customButton {
+    text-align: center;
+    width: 80%;
+    padding:10px 0px 10px 0px;
+    font-size: 25px;
+    color:#3e3e3e;
+    background:#E7CD9C;
+    border:none;
+    outline: none;
+    transition: all,0.3s;
+    cursor: pointer;
+}
+.customButton:disabled {
+    opacity: 70%;
+    pointer-events: none;
+}
+#buttonAddNewPost {
+    margin:52px 0px 25px 0px;
+}
+#newPostPanCreatePostButton {
+    width: 100%;
+}
+#saveChangesEditablePan {
+    width: 100%;
+}
+#saveChangesEditablePan:hover {
+    scale:0.9
+}
+#buttonAddNewAlbum {
+    margin:52px 0px 0px 0px;
+}
+#asideCustomButtonChangeInfo {
+    margin:52px 0px 25px 0px;
+}
+#asideCustomBackButton {
+    margin:10px 0px 0px 0px;
+}
+#asideCustomBackButtonRevealdPostPage {
+    margin:52px 0px 0px 0px;
+}
+#customPaginateButton {
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+#customPaginateButton:hover {
+    color:#E7CD9C;
+}
+#addNewCommentButton:hover {
+    scale:1.1
+}
+select {
+    background:none;
+    border:none;
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+option {
+    background:#E7CD9C;
+}
+.containerMainPagesContent {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.contentMainPagesContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#searchInput {
+    margin:173px 0px 0px 0px;
+    font-size: 25px;
+    width: 45%;
+}
+#searchInput:focus {
+    width: 50%;
+}
+.containerMainPostList {
+    position: relative;
+    display: grid;
+    grid-template-columns: 880px;
+}
+.postCard {
+    position: relative;
+    margin:100px 0px 0px 0px;
+    background:#FFE6B5;
+    border-radius: 15px;
+    padding:33px 42px 33px 42px;
+    word-wrap: break-word;
+}
+.postCard>h1 {
+    margin:0px 100px 10px 0px;
+}
+.postCard>h2 {
+    margin:0px 0px 10px 0px;
+}
+.containerUxPostCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.contentUxPostCard {
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+.contentUxPostCard>a {
+    font-size: 30px;
+    margin:0px 130px 0px 0px;
+    transition: all,0.3s;
+}
+.contentUxPostCard>a:hover {
+    color:#E7CD9C;
+    transform: translateY(-5px);
+}
+.contentUxPostCard>button {
+    background:none;
+    border:none;
+    outline: none;
+    transition: all,0.3s;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0px 16px 0px 0px;
+}
+.contentUxPostCard>button:hover {
+    transform: translateY(-5px);
+}
+.contentPostAuthor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0px 0px 20px 0px;
+}
+#morePreloaderContentButton {
+    margin:100px 0px 100px 0px;
+    border-radius: 100px;
+    font-size: 40px;
+    width: 100%;
+}
+#morePreloaderContentButton>img {
+    width: 35px;
+    height: 35px;
+}
+#morePreloaderContentButton:hover {
+    transform: translateY(5px);
+    opacity: 70%;
+}
+.editablePostPan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#editableCustomButton {
+    background:#E7CD9C;
+}
+#editableCustomButton {
+    transition: all,0.3s;
+}
+#editableCustomButton:hover {
+    scale:0.9
+}
+.editablePostPan>textarea {
+    padding:13px 26px 13px 26px;
+    border:none;
+    outline: none;
+    min-height: 20vh;
+    max-height: fit-content;
+}
+.editablePostPan>input,.editablePostPan>textarea,.editablePostPan>button {
+    min-width: 100%;
+    max-width: 100%;
+    margin:25px 0px 0px 0px;
+    font-size: 40px;
+}
+.containerPopupWindow {
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background:rgba(0,0,0,70%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contentPopupWindow {
+    background:#FFE6B5;
+    padding:64px;
+    width: 100vh;
+    min-height: 50vh;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+.newPostPan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    max-width: 100%;
+}
+.newPostPan>input,.newPostPan>textarea,.newPostPan>button {
+    margin:25px 0px 0px 0px;
+    font-size: 40px;
+}
+.newPostPan>button:hover {
+    scale:0.9
+}
+.newPostPan>textarea {
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 20vh;
+    max-height: fit-content;
+}
+.containerMainRevealedPostPage {
+    position: absolute;
+    left:0;
+    right:0;
+    top:100px;
+    bottom:0;
+}
+.contentMainRevealedPostPage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerMainPostListComments {
+    position: absolute;
+    left:0;
+    right:0;
+}
+.contentMainPostListComments {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 0px 0px 0px;
+}
+.postCommentList {
+    margin:100px 0px 0px 0px;
+    background:#FFE6B5;
+    border-radius: 15px;
+    padding:33px 42px 33px 42px;
+    width: 100vh;
+    word-wrap: break-word;
+}
+.postCommentUserInfo {
+    display: flex;
+    align-items: end;
+    margin:0px 0px 20px 0px;
+}
+.postCommentUserInfo>img {
+    width: 100px;
+    height: 100px;
+    margin:0px 10px 0px 0px;
+    border-radius: 5px;
+}
+.addCommentMainForm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:100px 0px 0px 0px;
+}
+.addCommentMainForm>textarea,.addCommentMainForm>button {
+    min-width: 100vh;
+    max-width: 100vh;
+    font-size: 40px;
+    margin:0px 0px 20px 0px;
+}
+.addCommentMainForm>textarea {
+    min-height: 20vh;
+    max-height: fit-content;
+}
+.containerContentPreloader {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.contentContentPreloader {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.editableCommentPan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.editableCommentPan>textarea,.editableCommentPan>button {
+    font-size: 30px;
+    margin:0px 0px 20px 0px;
+}
+.editableCommentPan>textarea {
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 20vh;
+    max-height: fit-content;
+}
+.containerAlbumlist {
+    min-height: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 500px 721px;
+    grid-row-gap: 100px;
+    justify-content: center;
+    margin:200px 0px 0px 0px;
+}
+.albumCard {
+    position: relative;
+    text-align:center;
+    cursor: pointer;
+    min-height: 459px;
+    max-height: 459px;
+}
+.albumCard>img {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 15px;
+}
+.albumCard>img,.albumCard>h1 {
+    transition: all,0.3s;
+}
+.albumCard:hover>img,.albumCard:hover>h1 {
+    filter: blur(5px);
+}
+.albumCard:before {
+    content:'Click to view full content..';
+    position: absolute;
+    top:45%;
+    font-size: 30px;
+    right:20%;
+    left:25%;
+    opacity: 0;
+    transition: all,0.3s;
+}
+.albumCard:hover::before {
+    opacity: 1;
+}
+#album_3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#contentAlbumPhotosPopup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    grid-row-gap:25px;
+    grid-column-gap: 10px;
+}
+#contentAlbumPhotosPopup>a>img {
+    transition: all,0.3s;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
+#contentAlbumPhotosPopup>.contentCustomFileUpload {
+    width: 300px;
+    height: 150px;
+}
+#contentAlbumPhotosPopup>.contentCustomFileUpload>h1 {
+    font-size: 20px;
+}
+#contentAlbumPhotosPopup>.contentCustomFileUpload>label {
+    width: 50px;
+    height: 50px;
+}
+#contentAlbumPhotosPopup>.contentCustomFileUpload>label>img {
+    width: 100%;
+    height: 100%;
+}
+#contentAlbumPhotosPopup>a>img:hover {
+    scale:0.9
+}
+#contentNewAlbumPopup>form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width:fit-content;
+    align-items: center;
+}
+#contentNewAlbumPopup>form>input,#contentNewAlbumPopup>form>button{
+    font-size: 40px;
+    margin:20px 0px 20px 0px;
+    width: 100%;
+}
+#contentNewAlbumPopup > form > .contentCustomFileUpload {
+    width: 100%;
+}
+#contentNewAlbumPopup>form>button:hover {
+    scale:1.1
+}
+.containerPaginateButtons {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.contentPaginateButtons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top:150px;
+}
+.contentPaginateButtons>button {
+    font-size: 40px;
+    margin:0px 25px 0px 0px;
+    background:none;
+    transition: all,0.3s;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
+.contentPaginateButtons>button:disabled {
+    color:#E7CD9C;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.containerUserProfilePageUserInfo {
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+}
+.contentUserProfilePageUserInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin:200px 0px 0px 0px;
+}
+.contentUserProfilePageUserInfo>img {
+    width: 250px;
+    height: 250px;
+    margin:25px 0px 0px 0px;
+    border-radius: 10px;
+}
+#changeUserInfoPopup>form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin:0px 0px 0px 55px;
+    align-items: center;
+}
+#changeUserInfoPopup>form>.contentCustomFileUpload {
+    width: 70%;
+}
+#changeUserInfoPopup>form>.contentCustomFileUpload>label>img {
+    width: 100px;
+    height: 100px;
+}
+#changeUserInfoPopup>form>input,#changeUserInfoPopup>form>button {
+    font-size: 40px;
+    margin:15px 0px 15px 0px;
+}
+#changeUserInfoPopup>form>input {
+    width: 100%;
+}
+#changeUserInfoPopup>form>button {
+    width: 100%;
+}
+#customButtonSaveNewUserInfo:hover {
+    scale:1.1
+}
+.contentNotFoundResult {
+    margin:25px 0px 0px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+.commentsIsNotDefined {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    width: 500px;
+    margin:10px 0px 0px 0px;
+}
+.commentsIsNotDefined>img {
+    width: 100px;
+    height: 100px;
+}
